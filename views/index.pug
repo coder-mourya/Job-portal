@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title job_portal #{job_portal}
+    script(async='', src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5969740535363989', crossorigin='anonymous')
+    <meta name="google-site-verification" content="xCl7rQraoOEs7YvEqg7sYBv_3X3xqG1OjtsS7Nt5fQs" />
+    <!-- Google tag (gtag.js) -->
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=G-PQVZPPGEKP')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PQVZPPGEKP');
+
+    block style
+      style 
+        include ../css/topnave.css
+        include ../css/footer.css
+         
+    body 
+
+html
+  head
+    
+    
+    nav#topnavbar
+      ul
+        li.v-class
+          a(href='about') About
+        li.v-class
+          a(href='contact') Contact us
+        li.v-class
+          a(href='home') New jobs
+        li.v-class
+          a(href='home') Home
+        .burger 
+          .line 
+          .line 
+          .line
+
+    block body
+    block containers
+    block content
+    script(src="/static/index.js")
+
+    footer
+      .container
+        p.footer Copyright &copy; 2023 Ak_Jobs

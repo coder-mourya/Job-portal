@@ -1,0 +1,24 @@
+extends index.pug 
+
+
+block style 
+    style
+      
+      include ../css/topnave.css
+      include ../css/contact.css
+      include ../css/footer.css
+      
+      
+
+block content 
+  .contact
+      form(action='submit.php', method='POST')
+      label(for='name') Name:
+      input#name(type='text', name='name', required='')
+      label(for='email') Email:
+      input#email(type='email', name='email', required='')
+      label(for='subject') Subject:
+      input#subject(type='text', name='subject', required='')
+      label(for='message') Message:
+      textarea#message(name='message', rows='5', required='')
+      button(type='submit') Submit

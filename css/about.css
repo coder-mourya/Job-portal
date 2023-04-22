@@ -1,0 +1,8 @@
+h1{
+    text-transform: capitalize;
+}
+.about{
+    margin: 0;
+    padding: 50px;
+    height: 100vh;
+}
